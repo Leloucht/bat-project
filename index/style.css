@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+body {
+    background-color: #000;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+    padding: 8px 16px;
+    z-index: 2;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 45px;
+    margin-left: 30px;
+}
+
+header .logo img {
+    background-size: cover;
+    width: 80px;
+    height: auto;
+    margin-right: 8px;
+}
+header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    margin: 8px 16px;
+    padding: 5px;
+}
+
+header nav .head {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 50px;
+    font-size: 1rem;
+    color: #f8f1f1fe;
+    cursor:pointer;
+    transition: .8s;
+}
+
+header nav .head:hover {
+    color: #de0029e2;
+    background-color: #000;
+    border-radius: 0 0 16px 16px;
+}
+
+
+header nav .head .fa-solid {
+    margin-right: 6px;
+}
+
+header .theme {
+    color: #f7f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    width: 70px;
+    height: 50px;
+    margin-left: 20px;
+    cursor:pointer;
+}
+
+header i:nth-child(1):hover {
+    color: #3af40697;
+    background-color: b;
+}
+
+header:hover i:nth-child(2):hover {
+    color: #de0029e2;
+}
+
+header:hover i:nth-child(3):hover {
+    color: #c503bb97;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin: 10px auto 25px;
+    padding: 8px 10px;
+}
+
+.main-container #banner {
+    animation: transitionImage 9s infinite;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90vw;
+    height: 700px;
+}
+
+
+.main-container .main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 500px;
+    margin: 20px 8px;
+}
+
+.main-container .main-content .trailer-content {
+    width: 50%;
+    margin: 20px 15px 25px;
+    padding: 6px;
+}
+
+.main-container .main-content .trailer-content video {
+    background-size: cover;
+    width: 100%;
+    padding-left: 16px;
+}
+
+.main-content .sinopsis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    margin: 25px 10px 20px;
+    row-gap: 20px;
+    background-color: transparent;
+}
+
+.main-content .sinopsis .text {
+    color: #f7f2f5;
+    width: 80%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.main-content .sinopsis .text p {
+    font-family: "Kdam Thmor Pro", sans-serif;
+    color: #f7f2f5;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align:justify;
+}
+
+.main-content .sinopsis button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 16px;
+    background-color: #de0029e2;
+    color: #f7f2f5;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition:  .8s;
+}
+
+.main-content .sinopsis button:hover {
+    color: #de0029e2;
+    background-color: #f7f2f5;
+}
+
+.cards-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px
+}
+
+.actor-cards{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+
+.cards {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 0 0 20px 10px;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.cards:hover {
+    transform: scale(1.1);
+}
+
+.cards .cards-bg {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width:max-content;
+    height: 40px;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #f7f2f5;
+    border-radius: 16px;
+}
+
+.banner-1 {
+    background-image: url('../assets/src/card-batman.jpg');
+}
+
+.banner-2 {
+    background-image: url('../assets/src/card-coringa.jpg');
+}
+
+.banner-3 {
+    background-image: url('../assets/src/card-harvey-dent.webp');
+}
+
+
+@keyframes transitionImage {
+    0%{
+        background-image: url('../assets/src/banners/banner.jpg');
+        opacity: 1;
+        background-position-x: center;
+    }
+    14%{
+        opacity: 0;
+        background-position-x: center;
+    }
+    17%{
+        opacity: 0;
+        background-position-x: left;
+    }
+    25%{
+        background-image: url('../assets/src/banners/banner-coringa.png');
+        background-position-x: left;
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+        background-position-x: left;
+
+    }
+    43%{
+        opacity: 0;
+        background-position-x: center;
+    }
+    50%{
+        background-image: url('../assets/src/banners/banner-batman.png');
+        background-position-x: center;
+        opacity: 1;
+    }
+    65%{
+        opacity: 0;
+        background-position-x: center;
+    }
+    68%{
+        opacity: 0;
+        background-position-x: right;
+    }
+    75%{
+        background-image: url('../assets/src/banners/banner-harvey.png');
+        background-position-x: right;
+        opacity: 1;
+    }
+    85%{
+        opacity: 0;
+        background-position-x: right;
+        background-image: url('../assets/src/banners/banner-preto.jpg');
+    }
+    90%{
+        opacity: 0;
+        background-position-x: center;
+    }
+    100%{
+        background-image: url('../assets/src/banners/banner.jpg');
+        opacity: 1;
+        background-position-x: center;
+    }
+
+}
+
+footer {
+    width: auto;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 10px 20px;
+}
+
+footer .logo-footer {
+    width: 100px;
+    height: 80px;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+footer .logo-footer img {
+    width: 100%;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+    height: 50px;
+    margin: 15px 8px;
+    padding: 6px 0;
+    color:#f7f2f5;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .8s;
+}
+
+footer .social-media a:hover {
+    color: #de0029e2;
+}
+footer .copyright {
+    color: #f7f2f5;
+    font-size: 1.5rem;
+    margin: 10px 6px;
+    letter-spacing: 2px;
+}
+
+footer .dev {
+    color: #f7f2f5;
+    font-size: 1.5rem;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+@media(max-width:768px){
+    .footer-navigation {
+        display: block;
+        margin-top: 20px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items:center
+    }
+    
+    header nav{
+        display: none;
+    }
+    
+    header .theme {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        
+    }
+    
+    #banner {
+        background-position: 50%;
+        margin-bottom: 50px;
+    }
+    .main-content {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+    .main-content .trailer-content {
+        width: 95%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+    .trailer-content video {
+        width: 100%;
+    }
+    .main-container .main-content .sinopsis {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-container .sinopsis .text {
+        width: 100%;
+        padding:0 12px
+    }
+    .main-container .sinopsis button {
+        width: 200px
+    }
+    
+    .main-container .actor-cards {
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .main-container .actor-cards .cards {
+        background-position: 50%;
+    }
+    .logo-footer {
+        margin: 20px 30px;
+        width: 120px;
+        height: 80px;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+    }
+    .logo-footer img {
+        width: 100%;
+    }
+    footer .footer-navigation .foot {
+        transition: .8s;
+        cursor: pointer;
+        color: #f7f2f5;
+    }
+
+    footer .footer-navigation .foot:hover {
+        color: #de0029e2;
+    }
+}

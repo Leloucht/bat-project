@@ -1,0 +1,151 @@
+
+@media(max-width:768px){
+    .footer-navigation {
+        display: block;
+        margin-top: 20px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items:center
+    }
+    
+    header nav{
+        display: none;
+    }
+    
+    header .theme {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        margin-bottom: 50px;
+    }
+
+    .main-section h2{
+        margin-top: 50px;
+    }
+
+    .main-section .formulario {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .main-section .formulario #banner-geracao {
+        width: 100%;
+        height: 350px;
+        padding: 10px;
+    }
+
+    .main-section .formulario form {
+        width: 80vw;
+        padding: 10px;
+    }
+
+    .main-section .formulario form .choice {
+        width: 100%;
+        padding: 10px 15px;
+    }
+
+    .contact-us .midias-content {
+        padding: 5px 10px;
+    }
+
+    .contact-us .midias-content .midias p {
+        text-align: center;
+    }
+
+    footer .footer-navigation .foot {
+        transition: .8s;
+        cursor: pointer;
+        color: #f7f2f5;
+    }
+
+    footer .footer-navigation .foot:hover {
+        color: #de0029e2;
+    }
+    footer .dev {
+        font-size: 1rem;
+    }
+    footer .copyright {
+        font-size: 1rem;
+    }
+    footer .social-media {
+        font-size: 1rem;
+    }
+    }
+
+@media(max-width: 480px) {
+    .main-section .formulario #banner-geracao {
+        height: 250px;
+    }
+    .main-section .formulario form label {
+        font-size: 1rem;
+    }
+    .main-section .formulario form .gender .sexo label {
+        font-size: .7rem;
+    }
+    .main-section .formulario form .gender .sexo input {
+        width: 8px;
+        height: 8px;
+    }
+    .main-section .formulario form .choice .batman-age span {
+        font-size: .5rem;
+        height: 12px;
+    }
+    .main-section .formulario form .gpt .option label {
+        font-size: .8rem;
+    }
+    .main-section .formulario form .update {
+        font-size: .8rem;
+    }
+    .main-section .formulario form .coments {
+        font-size: .8rem;
+    }
+    section .contact-us {
+        height: 220px;
+    }
+    
+    section .contact-us .midias-content .midias h3 {
+        font-size: .8rem;
+    }
+
+    section .contact-us .midias-content .midias p {
+        font-size: .8rem;
+    }
+
+    section .contact-us .midias-content .midias i {
+        font: 400;
+        font-size: .8rem
+    }
+    section .contact-us .midias-content .midias b {
+        font-size: .8rem;
+    }
+    section .contact-us .midias-content .midias i {
+        font-size: 2rem;
+    }
+    main .about-us {
+        height: 150px;
+    }
+    main .about-us h2 {
+        font-size: 1.2rem;
+    }
+    main .about-us p {
+        font-size: .8rem;
+    }
+    footer .social-media {
+        font-size: .8rem;
+    }
+    footer .copyright {
+        font-size: .8rem;
+    }
+    footer .dev {
+        font-size: .8rem;
+    }
+}

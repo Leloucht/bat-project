@@ -1,0 +1,108 @@
+
+@media(max-width:768px){
+    .footer-navigation {
+        display: block;
+        margin-top: 20px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items:center
+    }
+    
+    header nav{
+        display: none;
+    }
+    
+    header .theme {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        
+    }
+
+    main {
+        padding: 10px 5px;
+        margin: 20px auto;
+        gap: 5px;
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+        margin-top: 25px;
+    }
+
+    main .criticas-popular {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+        width: 95%;
+        background-color: #000;
+    }
+
+    main .criticas-popular .criticas-pt {
+        background-color: #de0029e2;
+    }
+
+    main .criticas-popular .criticas-pt span {
+        font-size: 1rem;
+    }
+
+    main .criticas-popular .criticas-pt p {
+        font-size: .8rem;
+    }
+
+    footer .social-media {
+        font-size: 1rem;
+    }
+    footer .dev {
+        font-size: 1rem;
+    }
+    footer .copyright {
+        font-size: 1rem;
+    }
+
+    .logo-footer {
+        margin: 20px 30px;
+        width: 120px;
+        height: 80px;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+    }
+    .logo-footer img {
+        width: 100%;
+    }
+    footer .footer-navigation .foot {
+        transition: .8s;
+        cursor: pointer;
+        color: #f7f2f5;
+    }
+
+    footer .footer-navigation .foot:hover {
+        color: #de0029e2;
+    }
+}
+
+@media(max-width: 440px){
+    main h1 {
+        font-size: 1rem;
+        margin: 30px auto -15px;
+    }
+    main .criticas-popular {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer .social-media {
+        font-size: .8rem;
+    }
+    footer .dev {
+        font-size: .8rem;
+    }
+    footer .copyright {
+        font-size: .8rem;
+    }
+}

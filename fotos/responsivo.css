@@ -1,0 +1,102 @@
+
+@media(max-width:768px){
+    .footer-navigation {
+        display: block;
+    }
+    footer .dev {
+        font-size: 1rem;
+    }
+    footer .copyright {
+        font-size: 1rem;
+    } 
+    footer .social-media {
+        font-size: .8rem;
+    }
+
+    footer .footer-navigation .foot {
+        transition: .8s;
+        cursor: pointer;
+        color: #f7f2f5;
+    }
+
+    footer .footer-navigation .foot:hover {
+        color: #de0029e2;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header .theme {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        
+    }
+
+    .cenas {
+        height: 300px;
+    }
+
+    .cenas .cenas-do-filme:hover {
+        width: 400px;
+        height: 500px;
+    }
+
+    .bastidores {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        width: 100%;
+        margin-right: 10px;
+        overflow-y: scroll;
+        overflow-x:hidden
+    }
+
+    .publico .arquivo label{
+        font-size: 1rem;
+    }
+
+    .publico .arquivo input {
+        width: 50%;
+        font-size: .9rem;
+    }
+
+    .publico .arquivo button {
+        width: 100px;
+        height: 30px;
+        font-size: .9rem;
+        position: absolute;
+        top:45%;
+    }
+}
+
+@media(max-width: 440px){
+    section {
+        margin:10px 0
+    }
+    section .main-section h1 {
+        margin-top: 30px;
+    }
+    section .main-section .cenas {
+        width: 100%;
+        margin: 0 10px;
+    }
+
+    section .main-section .cenas .cenas-do-filme {
+        height: 200px;
+        width: 50px;
+        margin: 10px 3px;
+    }
+    .publico span {
+        font-size: 1rem;
+    }
+    .publico .arquivo label{
+        font-size: 1rem;
+    }
+    .publico .arquivo input {
+        font-size: .6rem;
+    }
+}

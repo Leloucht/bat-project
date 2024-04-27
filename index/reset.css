@@ -1,0 +1,50 @@
+/* Reset básico */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  font-family: inherit;
+}
+
+/* Definindo box-sizing para o modelo de caixa moderno */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Reset de lista */
+ol, ul {
+  list-style: none;
+}
+
+/* Reset de elementos incorporados */
+img, iframe {
+  border: 0;
+}
+
+/* Reset de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reiniciando elementos de formulário padrão */
+button, input, select, textarea {
+  margin: 0;
+  font-size: inherit;
+  font-family: inherit;
+}

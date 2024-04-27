@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index/reset.css">
+    <title>contact us</title>
+    <link rel="shortcut icon" href="./assets/src/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./contato/contato.css">
+    <link rel="stylesheet" href="./contato/responsivo.css">
+</head>
+<body>
+    <header>
+
+        <div class="logo">
+            <img src="./assets/src/logo-batman.png" alt="logo do Batman">
+        </div>
+
+        <nav>
+
+          <a href="./index.html">
+              <div class="head">
+                  <span class="fa-solid fa-house"></span>
+                  <span class="text-head">home</span>
+                </div>
+            </a>
+            
+            <a href="./contato.html">
+                <div class="head">
+                    <span class="fa-solid fa-address-book"></span>
+                    <span class="text-head">contato</span>
+                </div>
+            </a>
+                
+            <a href="./fotos.html">
+                <div class="head">
+                    <span class="fa-solid fa-camera-retro"></span>
+                    <span class="text-head">fotos</span>
+                </div>
+            </a>
+            
+            <a href="./comentarios.html">
+                <div class="head">
+                    <span class="fa-solid fa-comments"></span>
+                    <span class="text-head">comentarios</span>
+                </div>
+            </a>
+        </nav>
+
+        <div class="theme">
+            <i id="joker-theme" class="fa-solid fa-face-grin-tongue-wink"></i>
+            <i id="bat-theme" class="fa-solid fa-moon"></i>
+            <i id="two=theme" class="fa-solid fa-circle-half-stroke"></i>
+        </div>
+
+    </header>
+
+    <main>
+        <section>
+            <div class="main-section">
+                <h2>Ola, gostaria de se apresentar?</h2>
+                <div class="formulario">
+                    <div id="banner-geracao"></div>
+                    <form action="./contato.html">
+
+                        <label for="name">Seu nome na vida real</label>
+                        <input type="text" pattern="A-Za-z " class="input">
+
+                        <label for="phone">telefone</label>
+                        <input type="number" class="input" placeholder="telefone/whatsapp">
+
+                        <label for="age">idade</label>
+                        <input type="number" class="input">
+
+                        <label for="gender">sexo</label>
+                        <div class="gender">
+                            <div class="sexo">
+                                <label for="sexo">masculino</label>
+                                <input type="radio" class="radio" name="sexo" value="male">
+                            </div>
+                            <div class="sexo">
+                                <label for="sexo">feminino</label>
+                                <input type="radio" class="radio" name="sexo" value="female">
+                            </div>
+                            <div class="sexo">
+                                <label for="sexo">outros(seja criativo)</label>
+                                <input type="radio" class="radio" name="sexo" value="A-Z">
+                            </div>
+                        </div>
+
+                        <label for="email">seu email</label>
+                        <input type="email" class="input" placeholder="coloque aqui seu email">
+
+                        <label for="geracoes">em qual geracao voce conheceu o batverso?</label>
+                        <div class="choice">
+
+                            <div class="batman-age" id="adam-west" onclick="adamBanner()">
+                                <img src="./assets/geracoes/batman-adam-west-1966_cke.webp" alt="adam-west">
+                                <span>adam west - 1966</span>
+                            </div>
+
+                            <div class="batman-age" id="michael-keaton" onclick="michaelBanner()">
+                                <img src="./assets/geracoes/batman-michael-keaton-1989_cke.webp" alt="michael-keaton">
+                                <span>michael keaton - 1989</span>
+                            </div>
+
+                            <div class="batman-age" id="val-kilmer" onclick="valBanner()">
+                                <img src="./assets/geracoes/batman-val-kilmer-1995_cke.webp" alt="val-kilmer">
+                                <span>val-kilmer - 1995</span>
+                            </div>
+
+                            <div class="batman-age" id="george-clooney" onclick="georgeBanner()">
+                                <img src="./assets/geracoes/batman-george-clooney-1997_cke.webp" alt="george-clooney">
+                                <span>george clooney - 1997</span>
+                            </div>
+
+                            <div class="batman-age" id="christian-bale" onclick="baleBanner()">
+                                <img src="./assets/geracoes/batman-christian-bale-2005_cke.webp" alt="christian-bale">
+                                <span>christian bale - 2005</span>
+                            </div>
+
+                            <div class="batman-age" id="ben-afleck" onclick="benBanner()">
+                                <img src="./assets/geracoes/batman-ben-afleck-2016.webp" alt="ben-afleck">
+                                <span>ben afleck - 2016</span>
+                            </div>
+
+                            <div class="batman-age" id="robert-pattinson" onclick="robertBanner()">
+                                <img src="./assets/geracoes/batman-robert-pattinson-2022.jpg" alt="robert-pattinson">
+                                <span>robert pattinson - 2022</span>
+                            </div>
+
+                        </div>
+
+                        <label for="gpt">pera la, voce eh humano?</label>
+                        <div class="gpt">
+                            <div class="option">
+                                <input type="radio" class="radio" name="especie" value="human">
+                                <label for="response">sai pra la, sou de carne e osso</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio" name="especie" value="crazy-man">
+                                <label for="response">as vezes me pego fazendo essa pergunta</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio" name="especie" value="exterminator">
+                                <label for="response">ok, me pegou, estava so disfarcado(a)</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio" name="especie" value="alien">
+                                <label for="response">quando descobrir, sera tarde demais</label>
+                            </div>
+                        </div>
+
+                        <label  class="update" for="update">gostaria de receber noticias/informacoes pelo seu email?</label>
+                        <input type="checkbox" id="update">
+
+                        <label class="coments" for="coments">eai gostaria de nos dizer mais alguma coisa?</label>
+                        <textarea name="coments" id="" class="textarea" cols="1" rows="1"></textarea>
+
+                        <button>enviar</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="contact-us">
+                <h2>como voce prefere falar com a gente?</h2>
+                <div class="midias-content">
+                    <div class="e-mail midias">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h3>E-mail</h3>
+                        <p>tem alguma duvida?</p>
+                        <p><b>********@gmail.com</b></p>
+                    </div>
+                    <div class="telefone midias">
+                        <i class="fa-solid fa-phone"></i>
+                        <h3>telefone</h3>
+                        <p>Voce pode ligar a qualquer hora</p>
+                        <p><b>(**)*****-****</b></p>
+                    </div>
+                    <div class="chat midias">
+                        <i class="fa-regular fa-comment"></i>
+                        <h3>chat</h3>
+                        <p>tem uma alguma ideia ou papo pra debater?</p>
+                        <a href="" target="_blank">
+                            <p><b>basta abrir chat do app</b></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="about-us">
+            <h2>sobre nos</h2>
+            <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, fugit tenetur reiciendis provident omnis suscipit deleniti enim at asperiores minus nesciunt quidem necessitatibus esse ullam quisquam reprehenderit, vero veniam voluptates.
+            </p>
+            <p>ps: preguisa de bolar um texto maneiro mesmo</p>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="logo-footer">
+            <img src="./assets/src/logo-batman.png" alt="">
+        </div>
+
+        <div class="footer-navigation">
+            <a href="./index.html">
+                <div class="foot">
+                    <span class="fa-solid fa-house"></span>
+                    <span class="text-footer">home</span>
+                </div>
+            </a>
+
+            <a href="./contato.html">
+                <div class="foot">
+                    <span class="fa-solid fa-address-book"></span>
+                    <span class="text-footer">contato</span>
+                </div>
+            </a>
+
+            <a href="./fotos.html">
+                <div class="foot">
+                    <span class="fa-solid fa-camera-retro"></span>
+                    <span class="text-footer">fotos</span>
+                </div>
+            </a>
+
+            <a href="./comentarios.html">
+                <div class="foot">
+                    <span class="fa-solid fa-comments"></span>
+                    <span class="text-footer">comentarios</span>
+                </div>
+            </a>
+        </div>
+        
+        <div class="social-media">
+            <a href="">
+                <span class="fa-brands fa-linkedin"></span>
+                <span class="text-footer">linkedin</span>
+            </a>
+
+            <a href="">
+                <span class="fa-brands fa-facebook"></span>
+                <span class="text-footer">facebook</span>
+            </a>
+
+            <a href="">
+                <span class="fa-brands fa-github"></span>
+                <span class="text-footer">github</sapn>
+            </a>
+
+            <a href="">
+                <span class="fa-brands fa-instagram"></span>
+                <span class="text-footer">instagram</span>
+            </a>
+        </div>
+        <span class="copyright">todos os direitos parcialmente copiados</span>
+        <span class="dev">desenvolvido por &copy; Leandro Alves</span>
+    </footer>
+    <script src="https://kit.fontawesome.com/bb06262507.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
