@@ -60,11 +60,19 @@
             <div class="main-section">
                 <h2>Ola, gostaria de se apresentar?</h2>
                 <div class="formulario">
-                    <div id="banner-geracao"></div>
+
+                    <div id="modal" style="opacity: 0;" onclick="hideModal()">
+                        <div id="modal-content">
+                        </div>
+                    </div>
+
+                    <div id="banner-geracao" onclick="showModal()">
+                        <p></p>
+                    </div>
                     <form action="./contato.html">
 
                         <label for="name">Seu nome na vida real</label>
-                        <input type="text" pattern="A-Za-z " class="input">
+                        <input type="text" pattern="A-Z a-z" class="input">
 
                         <label for="phone">telefone</label>
                         <input type="number" class="input" placeholder="telefone/whatsapp">
@@ -96,37 +104,37 @@
 
                             <div class="batman-age" id="adam-west" onclick="adamBanner()">
                                 <img src="./assets/geracoes/batman-adam-west-1966_cke.webp" alt="adam-west">
-                                <span>adam west - 1966</span>
+                                <label for="batage1">adam west - 1966</label>
                             </div>
 
                             <div class="batman-age" id="michael-keaton" onclick="michaelBanner()">
                                 <img src="./assets/geracoes/batman-michael-keaton-1989_cke.webp" alt="michael-keaton">
-                                <span>michael keaton - 1989</span>
+                                <label for="batage2">michael keaton - 1989</label>
                             </div>
 
                             <div class="batman-age" id="val-kilmer" onclick="valBanner()">
                                 <img src="./assets/geracoes/batman-val-kilmer-1995_cke.webp" alt="val-kilmer">
-                                <span>val-kilmer - 1995</span>
+                                <label for="batage3">val-kilmer - 1995</label>
                             </div>
 
                             <div class="batman-age" id="george-clooney" onclick="georgeBanner()">
                                 <img src="./assets/geracoes/batman-george-clooney-1997_cke.webp" alt="george-clooney">
-                                <span>george clooney - 1997</span>
+                                <label for="batage4">george clooney - 1997</label>
                             </div>
 
                             <div class="batman-age" id="christian-bale" onclick="baleBanner()">
                                 <img src="./assets/geracoes/batman-christian-bale-2005_cke.webp" alt="christian-bale">
-                                <span>christian bale - 2005</span>
+                                <label for="batage5">christian bale - 2005</label>
                             </div>
 
                             <div class="batman-age" id="ben-afleck" onclick="benBanner()">
                                 <img src="./assets/geracoes/batman-ben-afleck-2016.webp" alt="ben-afleck">
-                                <span>ben afleck - 2016</span>
+                                <label for="batage6">ben afleck - 2016</label>
                             </div>
 
                             <div class="batman-age" id="robert-pattinson" onclick="robertBanner()">
                                 <img src="./assets/geracoes/batman-robert-pattinson-2022.jpg" alt="robert-pattinson">
-                                <span>robert pattinson - 2022</span>
+                                <label for="batage7">robert pattinson - 2022</label>
                             </div>
 
                         </div>

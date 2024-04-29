@@ -82,8 +82,25 @@
     }
 
 @media(max-width: 480px) {
+    .main-section .formulario #modal #modal-content {
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        background-color: blue;
+    }
+    .main-section .formulario #modal #modal-content .modalBackG {
+        width: 90%;
+        margin: 10px auto 0;
+    }
+    .main-section .formulario #modal #modal-content .modalText {
+        width: 100%;
+        font-size: .7rem;
+        text-align: justify;
+    }
     .main-section .formulario #banner-geracao {
+        width: 100%;
         height: 250px;
+        background-position-x: center;
     }
     .main-section .formulario form label {
         font-size: 1rem;
